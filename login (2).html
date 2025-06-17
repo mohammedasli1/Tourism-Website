@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Here</title>
+    <link rel="icon" href="./files/logo.png">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<style>
+	
+	 * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            }
+      body {
+        background-color: rgb(135, 209, 209);
+       
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.0;
+        color: #191515;
+      }
+      
+
+      header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	
+	padding: 1rem 9%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+	box-shadow: 0 0.5rem 1rem rgba(20, 5, 187, 0.379);
+  }
+
+nav{
+    width: 100%;
+    position: fixed;
+    background-color: rgb(21, 74, 74);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 15%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: 60px;
+    margin: 2vh;
+    margin-left: 8%;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.navbar{
+    display: flex;
+    margin-right: 4vh;
+}
+
+.navbar a{
+    color: white;
+    font-size: 18px;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-weight: 500;   
+    text-decoration: none;
+    transition: ease 0.40s;
+}
+
+.navbar a:hover,.navbar a.active{
+    background: white;
+    color: black;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 5px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+	.register-body{
+    background-color: #101010;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.registration{
+    padding: 110px 30%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.register-form h1{
+    font-size: 80px;
+    color: white;
+    margin-bottom: 20px;
+}
+.register-form h1 span{
+    color: #fc0050;
+}
+
+.register-form{
+    color: white;
+    font-size: 20px;
+}
+
+.register-form form input{
+    color: white;
+    padding: 17px;
+    background-color: #191919;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+.register-form h4{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #fc0050;
+}
+
+
+.register-form form .submitbtn{
+    display: inline-block;
+    background-color: #fc0050;
+    font-size: 27px;
+    font-weight: 600px;
+    border: 2px solid transparent;
+    border-radius: 60px;
+    width: 220px;
+    cursor: pointer;
+    transition: ease 0.30s;
+}
+
+.register-form form .submitbtn:hover{
+    border: 2px solid #fc0050;
+    background-color: transparent;
+    transform: scale(1.1);
+}
+
+
+	</style>
+</head>
+  <div class="content" id="home"> 
+    <nav>
+        <img src="imeges/LOGO.jpg" class="logo" alt="Logo" title="FirstFlight Travels">
+        
+        <ul class="navbar">
+            <li>
+                <a href="index.html">Home</a>
+                <a href="tour packages2.html">Packages</a>
+                <a href="BOOKING.html">Booking</a>
+                <a href="about us.html">About Us</a>
+                <a href="contect.html">Contact Us</a>
+                <a href="photos.html">Gallery</a>
+                <a href="location.html">Locations</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="registration">
+        <div class="register-form">
+            <h1>Register <span>Here</span></h1>
+            <form action="" onsubmit="return validateform()">
+
+            <input type="text" name="myname1" placeholder="Name" id="name" required>
+            <input type="email" name="myemail" placeholder="Email-Id" id="" required>
+            <input type="tel" name="myphone" placeholder="Phone No." id="phonenum" required>
+            <input type="number" name="myage" placeholder="Age" id="" required>
+            <h4>Gender</h4>
+            <input type="radio" name="mygender" id="" required> Male &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <input type="radio" name="mygender" id=""> Female
+            <h4>Departure</h4>
+            <input type="datetime-local" name="departuredate" id="" required>
+            <h4>Return</h4>
+            <input type="datetime-local" name="returndate" id="" required>
+          
+            <input type="checkbox" name="t&c" id="" checked required> I accept the Terms & Conditions.
+            <br> <br> 
+            <input type="submit" value="Submit" class="submitbtn">
+
+        </form>
+        </div>
+    </section>
+
+
+
+
+
+</body>
+</html>

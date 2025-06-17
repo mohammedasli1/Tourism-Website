@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locations</title>
+  <style>
+      * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            }
+      body {
+       
+       background-image: url(imeges/contact.jpg);
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.0;
+        color: #191515;
+      }
+      
+
+      header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	
+	padding: 1rem 9%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+	box-shadow: 0 0.5rem 1rem rgba(20, 5, 187, 0.379);
+  }
+
+nav{
+    width: 100%;
+    position: fixed;
+    background-color: rgb(21, 74, 74);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 15%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: 60px;
+    margin: 2vh;
+    margin-left: 8%;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.navbar{
+    display: flex;
+    margin-right: 4vh;
+}
+
+.navbar a{
+    color: white;
+    font-size: 18px;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-weight: 500;   
+    text-decoration: none;
+    transition: ease 0.40s;
+}
+
+.navbar a:hover,.navbar a.active{
+    background: white;
+    color: black;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 5px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 16px;
+      padding: 16px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div class="content" id="home"> 
+    <nav>
+        <img src="imeges/LOGO.jpg" class="logo" alt="Logo" title="FirstFlight Travels">
+        
+        <ul class="navbar">
+            <li>
+                <a href="index.html">Home</a>
+                <a href="tour packages2.html">Packages</a>
+                <a href="BOOKING.html">Booking</a>
+                <a href="about us.html">About Us</a>
+                <a href="contect.html">Contact Us</a>
+                <a href="photos.html">Gallery</a>
+                <a href="location.html">Locations</a>
+            </li>
+        </ul>
+    </nav>
+    <br><br><br><br><br><br><br>
+<div class="gallery">
+  <img src="imeges/img/fb1.jpg" alt="Location 1">
+  <img src="imeges/img/fb2.jpg" alt="Location 2">
+  <img src="imeges/img/fb3.jpg" alt="Location 3">
+  <img src="imeges/img/fb4.jpg" alt="Location 4">
+  <img src="imeges/img/fb5.jpg" alt="Location 5">
+  <img src="imeges/img/fb6.jpg" alt="Location 6">
+  <img src="imeges/img/fb7.jpg" alt="Location 7">
+  <img src="imeges/img/fb8.jpg" alt="Location 8">
+  <img src="imeges/img/fb9.jpg" alt="Location 9">
+  <img src="imeges/img/fb10.jpg" alt="Location 10">
+  <img src="imeges/img/fb11.jpg" alt="Location 11">
+  <img src="imeges/img/fb12.jpg" alt="Location 12">
+  <img src="imeges/img/fb13.jpg" alt="Location 13">
+  <img src="imeges/img/fb14.jpg" alt="Location 14">
+  <img src="imeges/img/fb15.jpg" alt="Location 15">
+  <img src="imeges/img/fb16.jpg" alt="Location 16">
+  <img src="imeges/img/fb17.jpg" alt="Location 17">
+  <img src="imeges/img/fb18.jpg" alt="Location 18">
+
+  <!-- Add more images as needed -->
+</div>
+
+</body>
+</html>

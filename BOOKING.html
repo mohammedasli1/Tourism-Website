@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <style>
+          * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            }
+      body {
+        background-image: url(imeges/contact.jpg);
+       
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.0;
+        color: #191515;
+      }
+      
+
+      header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	
+	padding: 1rem 9%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+	box-shadow: 0 0.5rem 1rem rgba(20, 5, 187, 0.379);
+  }
+
+nav{
+    width: 100%;
+    position: fixed;
+    background-color: rgb(21, 74, 74);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 15%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: 60px;
+    margin: 2vh;
+    margin-left: 8%;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.navbar{
+    display: flex;
+    margin-right: 4vh;
+}
+
+.navbar a{
+    color: white;
+    font-size: 18px;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-weight: 500;   
+    text-decoration: none;
+    transition: ease 0.40s;
+}
+
+.navbar a:hover,.navbar a.active{
+    background: white;
+    color: black;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 5px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+        .hotel {
+            max-width: 600px;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .hotel img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .hotel-info {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .hotel-info h2 {
+            margin-bottom: 10px;
+        }
+
+        .hotel-info p {
+            margin: 0;
+        }
+
+        .booking-form {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .booking-form input {
+            width: 50%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        .booking-form button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content" id="home"> 
+        <nav>
+            <img src="imeges/LOGO.jpg" class="logo" alt="Logo" title="FirstFlight Travels">
+            
+            <ul class="navbar">
+                <li>
+                    <a href="index.html">Home</a>
+                    <a href="tour packages2.html">Packages</a>
+                    <a href="BOOKING.html">Booking</a>
+                    <a href="about us.html">About Us</a>
+                    <a href="contect.html">Contact Us</a>
+                    <a href="photos.html">Gallery</a>
+                    <a href="location.html">Locations</a>
+                </li>
+            </ul>
+        </nav>
+        <br><br><br><br><br><br><br>
+
+<div class="hotel">
+    <img src="imeges/HOTEL1.webp" alt="Hotel Image">
+    <div class="hotel-info">
+        <h2>Marino Beach Hotel</h2>
+        <p>Location: Colombo,hotel in Colombo</p>
+        <p>Price per night: $2600</p>
+    </div>
+</div>
+
+<div class="booking-form">
+    <h2>Book Your Stay</h2>
+    <form action="your-booking-action" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <br>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <br>
+        <input type="date" name="check-in" required>
+        <br>
+        <input type="date" name="check-out" required>
+        <br>
+        <button type="submit">Book Now</button><br><br>
+
+
+        <div class="hotel">
+            <img src="imeges/hotel2.webp" alt="Hotel Image">
+            <div class="hotel-info">
+                <h2>The Kingsbury Hotel</h2>
+                <p>Location: Hotel In Fort Colombo,SriLanka</p>
+                <p>Price per night: $3000</p>
+            </div>
+        </div>
+        
+        <div class="booking-form">
+            <h2>Book Your Stay</h2>
+            <form action="your-booking-action" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <br>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <br>
+                <input type="date" name="check-in" required>
+                <br>
+                <input type="date" name="check-out" required>
+                <br>
+                <button type="submit">Book Now</button><br><br>
+                
+                
+        <div class="hotel">
+            <img src="imeges/hotel3.webp" alt="Hotel Image">
+            <div class="hotel-info">
+                <h2>Shangri-La Hotel</h2>
+                <p>Location: Hotel In Gall Face Beach Colombo,SriLanka</p>
+                <p>Price per night: $4000</p>
+            </div>
+        </div>
+        
+        <div class="booking-form">
+            <h2>Book Your Stay</h2>
+            <form action="your-booking-action" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <br>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <br>
+                <input type="date" name="check-in" required>
+                <br>
+                <input type="date" name="check-out" required>
+                <br>
+                <button type="submit">Book Now</button><br><br>
+
+                                        
+    
+            <div class="hotel">
+                <img src="imeges/hotel4.webp" alt="Hotel Image">
+                <div class="hotel-info">
+                    <h2>Earl's Regent Hotel</h2>
+                    <p>Location: Hotel In Kandy,SriLanka</p>
+                    <p>Price per night: $2800</p>
+                </div>
+            </div>
+            
+            <div class="booking-form">
+                <h2>Book Your Stay</h2>
+                <form action="your-booking-action" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <br>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <br>
+                    <input type="date" name="check-in" required>
+                    <br>
+                    <input type="date" name="check-out" required>
+                    <br>
+                    <button type="submit">Book Now</button><br><br>
+            
+
+                    
+                    
+                            <div class="hotel">
+                                <img src="imeges/hotel5.webp" alt="Hotel Image">
+                                <div class="hotel-info">
+                                    <h2>Fox Kandy By Fox Resort</h2>
+                                    <p>Location: Hotel In Kandy,SriLanka</p>
+                                    <p>Price per night: $1800</p>
+                                </div>
+                            </div>
+                            
+                            <div class="booking-form">
+                                <h2>Book Your Stay</h2>
+                                <form action="your-booking-action" method="post">
+                                    <input type="text" name="name" placeholder="Your Name" required>
+                                    <br>
+                                    <input type="email" name="email" placeholder="Your Email" required>
+                                    <br>
+                                    <input type="date" name="check-in" required>
+                                    <br>
+                                    <input type="date" name="check-out" required>
+                                    <br>
+                                    <button type="submit">Book Now</button><br><br>
+
+                                    
+                                    
+                                            <div class="hotel">
+                                                <img src="imeges/hotel6.webp" alt="Hotel Image">
+                                                <div class="hotel-info">
+                                                    <h2>The Queensburry Hotel</h2>
+                                                    <p>Location: Hotel In Nuwara Eliya,SriLanka</p>
+                                                    <p>Price per night: $2500</p>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="booking-form">
+                                                <h2>Book Your Stay</h2>
+                                                <form action="your-booking-action" method="post">
+                                                    <input type="text" name="name" placeholder="Your Name" required>
+                                                    <br>
+                                                    <input type="email" name="email" placeholder="Your Email" required>
+                                                    <br>
+                                                    <input type="date" name="check-in" required>
+                                                    <br>
+                                                    <input type="date" name="check-out" required>
+                                                    <br>
+                                                    <button type="submit">Book Now</button><br><br>
+                                    
+    </form>
+</div>
+<footer>
+    
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourism Gallery</title>
+  <style>
+      * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            }
+      body {
+       
+       background-image: url(imeges/contact.jpg);
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.0;
+        color: #191515;
+      }
+      
+
+      header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	
+	padding: 1rem 9%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+	box-shadow: 0 0.5rem 1rem rgba(20, 5, 187, 0.379);
+  }
+
+nav{
+    width: 100%;
+    position: fixed;
+    background-color: rgb(21, 74, 74);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 15%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: 60px;
+    margin: 2vh;
+    margin-left: 8%;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.navbar{
+    display: flex;
+    margin-right: 4vh;
+}
+
+.navbar a{
+    color: white;
+    font-size: 18px;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-weight: 500;   
+    text-decoration: none;
+    transition: ease 0.40s;
+}
+
+.navbar a:hover,.navbar a.active{
+    background: white;
+    color: black;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 5px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+}
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 16px;
+      padding: 16px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div class="content" id="home"> 
+    <nav>
+        <img src="imeges/LOGO.jpg" class="logo" alt="Logo" title="FirstFlight Travels">
+        
+        <ul class="navbar">
+            <li>
+                <a href="index.html">Home</a>
+                <a href="tour packages2.html">Packages</a>
+                <a href="BOOKING.html">Booking</a>
+                <a href="about us.html">About Us</a>
+                <a href="contect.html">Contact Us</a>
+                <a href="photos.html">Gallery</a>
+                <a href="location.html">Locations</a>
+            </li>
+        </ul>
+    </nav>
+    <br><br><br><br><br><br><br>
+<div class="gallery">
+  <img src="imeges/tr1.jpg" alt="Tourism Image 1">
+  <img src="imeges/tr2.jpg" alt="Tourism Image 2">
+  <img src="imeges/tr3.jpg" alt="Tourism Image 3">
+  <img src="imeges/tr4.jpg" alt="Tourism Image 4">
+  <img src="imeges/tr5.jpg" alt="Tourism Image 5">
+  <img src="imeges/tr6.jpg" alt="Tourism Image 6">
+  <img src="imeges/tr7.jpg" alt="Tourism Image 7">
+  <img src="imeges/ir11.jpg" alt="Tourism Image 9">
+  <img src="imeges/ir10.jpg" alt="Tourism Image 9">
+  <img src="imeges/tr8.jpg" alt="Tourism Image 12">
+  <img src="imeges/ir13.jpg" alt="Tourism Image 12">
+  <img src="imeges/Bentota-Beach.jpg" alt="Tourism Image 12">
+  <img src="imeges/ir14.jpg" alt="Tourism Image 13">
+  <img src="imeges/Sigiriya.jpeg" alt="Tourism Image 14">
+  <img src="imeges/ir11.jpg" alt="Tourism Image 15">
+
+
+  <!-- Add more images as needed -->
+</div>
+
+</body>
+</html>
